@@ -11,8 +11,8 @@ import org.testng.annotations.*;
 public class BaseTest {
 	
 	public static RemoteWebDriver driver = null;
-	String username = System.getenv("LT_USERNAME") == null ? "vipul31gupta" : System.getenv("LT_USERNAME");
-	String accessKey = System.getenv("LT_ACCESS_KEY") == null ? "gsHDwl7aj0bXNoLrvirbfOEehHSp1a9yvCECGEcc3YPm8aRhQg" : System.getenv("LT_ACCESS");
+	String username = System.getenv("LT_USERNAME") == null ? "<lambdatest_username>" : System.getenv("LT_USERNAME");
+	String accessKey = System.getenv("LT_ACCESS_KEY") == null ? "<lambdatest_accesskey>" : System.getenv("LT_ACCESS");
 
 	@BeforeClass
 	public void setDriver() 
