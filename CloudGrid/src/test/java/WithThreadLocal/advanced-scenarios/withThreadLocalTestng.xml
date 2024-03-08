@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="2" name="Test" parallel="methods">
 	  <classes>
-		  <class name="WithThreadLocal.additionalTests.TestSimpleFormSeleniumPlayground" />
-		  <class name="WithThreadLocal.additionalTests.TestOrderFlowEcommercePlayground" />
+		  <class name="WithThreadLocal.advanced-scenarios.TestSimpleFormSeleniumPlayground" />
+		  <class name="WithThreadLocal.advanced-scenarios.TestOrderFlowEcommercePlayground" />
 	  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,4 +1,4 @@
-package WithThreadLocal.additionalTests;
+package WithThreadLocal.advanced-scenarios;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
