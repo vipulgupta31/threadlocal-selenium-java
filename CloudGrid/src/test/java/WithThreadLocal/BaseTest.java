@@ -14,7 +14,7 @@ public class BaseTest {
 	private static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>();
 	
 	String username = System.getenv("LT_USERNAME") == null ? "<lambdatest_username>" : System.getenv("LT_USERNAME");
-	String accessKey = System.getenv("LT_ACCESS_KEY") == null ? "<lambdatest_accesskey>" : System.getenv("LT_ACCESS");
+	String accessKey = System.getenv("LT_ACCESS_KEY") == null ? "<lambdatest_accesskey>" : System.getenv("LT_ACCESS_KEY");
 
 	@BeforeClass
 	public void setDriver() 
@@ -22,7 +22,7 @@ public class BaseTest {
 		try {
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.setPlatformName("Windows 10");
-			chromeOptions.setBrowserVersion("121.0");
+			chromeOptions.setBrowserVersion("122.0");
 
 			HashMap<String, Object> ltOptions = new HashMap<String, Object>();
 			ltOptions.put("build", "RemoteWebDriver with ThreadLocal");
