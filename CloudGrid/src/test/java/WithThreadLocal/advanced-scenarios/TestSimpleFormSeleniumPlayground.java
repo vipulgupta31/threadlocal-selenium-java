@@ -25,6 +25,8 @@ public class TestSimpleFormSeleniumPlayground extends BaseTest
 		System.out.println("Thread id " + Thread.currentThread().getId() + " : Fetch the message and print it");
 		String message = getDriver().findElement(By.id("message")).getText();
 		System.out.println("Thread id " + Thread.currentThread().getId() + " : Final message = " + message);
+
+		status = "passed";
 	}	
 
 }

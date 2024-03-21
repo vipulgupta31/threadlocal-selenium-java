@@ -22,5 +22,7 @@ public class TestOrderFlowEcommercePlayground extends BaseTest
 		System.out.println("Thread id " + Thread.currentThread().getId() + " : Fetch the price of first item and print it");
 		String price = getDriver().findElement(By.xpath("(//*[@class='price-new'])[1]")).getText();
 		System.out.println("Thread id " + Thread.currentThread().getId() + " : Final message = " + price);
+
+		status = "passed";
 	}	
 }
