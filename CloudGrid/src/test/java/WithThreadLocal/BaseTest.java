@@ -15,6 +15,8 @@ public class BaseTest {
 	
 	String username = System.getenv("LT_USERNAME") == null ? "<lambdatest_username>" : System.getenv("LT_USERNAME");
 	String accessKey = System.getenv("LT_ACCESS_KEY") == null ? "<lambdatest_accesskey>" : System.getenv("LT_ACCESS_KEY");
+	
+	public String status = "failed";
 
 	@BeforeClass
 	public void setDriver() 
@@ -46,6 +48,7 @@ public class BaseTest {
 	public void closeBrowser() {
 		System.out.println("Browser closed by Thread : " + Thread.currentThread().getId()
 				+ " and Closing driver reference is :" + getDriver());
+		driver.get().executeScript("lambda-status=" + status);
 		driver.get().close();
 		driver.remove();
 	}
